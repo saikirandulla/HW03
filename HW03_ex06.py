@@ -8,7 +8,7 @@
 # When you submit only include your final function: compare
 
 def compare(x,y):
-	if(x >y):
+	if(x > y): #compare x,y
 		return 1
 	elif(x ==y):
 		return 0
@@ -22,9 +22,8 @@ def compare(x,y):
 # Do develop incrementally. Do not share here.
 import math
 def hypotenuse(side1, side2):
-	hypotenuse_squared = side1** 2 + side2 ** 2
-	hyp = math.sqrt(hypotenuse_squared)
-	print hyp
+	hypotenuse_squared = side1** 2 + side2 ** 2 # calculating hypotenuse squared
+	hyp = math.sqrt(hypotenuse_squared) # calculating square root of hypotenuse squared
 	return hyp
 
 
@@ -36,10 +35,8 @@ def hypotenuse(side1, side2):
 
 def is_between(x,y,z):
 	if(x <= y <= z):
-		print "true"
 		return True
 	else: 
-		print "false"
 		return False
 
 
@@ -48,12 +45,10 @@ def is_between(x,y,z):
 # When you submit only include your final function: is_palindrome
 
 def is_palindrome(s):
-	reversed = s[::-1]
-	if s == reversed:
-		print "true"
+	reversed = s[::-1]  #reversing the string
+	if s == reversed:  
 		return True
 	else:
-		print "false"
 		return False
 
 
@@ -63,10 +58,8 @@ def is_palindrome(s):
 
 def is_power(a,b):
 		if (a%b == 0 and (a/b) % b == 0):
-			print "a is a power of b"
 			return True
 		else:
-			print "false"
 			return False
 
 
